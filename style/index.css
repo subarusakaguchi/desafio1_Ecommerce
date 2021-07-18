@@ -1,0 +1,107 @@
+/* Main */
+main .main {
+    background-image: url(../assets/images/bg1.jpg);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    padding: 100px 0px;
+}
+
+main .main h1 {
+    color: var(--red);
+}
+
+main .main p {
+
+    color: var(--orange);
+}
+
+main .main strong {
+    font-size: 100rem;
+}
+
+/* Call to Action */
+main .cta {
+    background-color: var(--orange);
+    height: 400px;
+    padding: 100px 0;
+}
+
+main .cta .ctaText h2 {
+    color: var(--red);
+}
+
+main .cta #cta form input {
+    width: 300rem;
+    margin-bottom: 20rem;
+}
+
+/* Benefits */
+main .benefits {
+    background-image: url(../assets/images/bg2.jpg);
+    padding: 50px 0;
+}
+
+main .benefits h2 {
+    color: var(--orange);
+}
+
+main .benefits p {
+    margin-bottom: 50rem;
+}
+
+main .benefits .benefitsContents {
+    display: flex;
+    justify-content: center;
+}
+
+main .benefits .benefitsContents .benefitsContent {
+    margin: 0 20rem;
+    width: 400rem;
+}
+
+main .benefits .benefitsContents .benefitsContent h3 {
+    color: var(--red);
+}
+
+/* Products */
+main .products {
+    background-image: url(../assets/images/bg3.jpg);
+    padding: 50px 0;
+}
+
+main .products h2 {
+    color: var(--red);
+}
+
+main .products #sales {
+    display: flex;
+}
+
+/* Support */
+main .support {
+    background-color: var(--orange);
+    padding: 50px 0;
+}
+
+main .support h2 {
+    color: var(--red);
+    margin-bottom: 20px;
+}
+
+main .support h3 {
+    margin-bottom: 20px;
+}
+
+main .support form input, textarea {
+    resize: none;
+    width: 400px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+footer {
+    height: 50px;
+}

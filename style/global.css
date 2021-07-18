@@ -13,11 +13,18 @@ html {
     --red: #E42024;
     --orange: #F3A712;
     --gray: #748386;
-    --mainFont: 'Open Sans', sans-serif;
-    --secondaryFont: 'Poppins', sans-serif;
+    --mainFont: 'Poppins', sans-serif;
+    --secondaryFont: 'Open Sans', sans-serif;
 
     /* Ajuste para poder usar px = rem em escala 1:1 */
     font-size: 6.25%;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 body,
@@ -26,6 +33,28 @@ input,
 textarea {
     font-family: var(--secondaryFont);
     font-size: clamp(14px, 16rem, 2vw);
+}
+
+input, textarea {
+    padding: 10px 15px;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    font-weight: bolder;
+    background-color: transparent;
+    color: var(--red);
+    border: 2px solid var(--red);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--red);
+    color: var(--white);
+    transition-duration: .5s;
 }
 
 h1, h2, h3 {
@@ -47,6 +76,52 @@ h3 {
 p {
     font-family: var(--secondaryFont);
     font-size: clamp(14px, 5vw, 20rem);
+    font-weight: bolder;
+}
+
+a {
+    color: var(--orange);
+}
+
+a:hover {
+    cursor: pointer;
+    color: var(--red);
+}
+
+strong {
+    color: var(--red);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.726);
+}
+
+.mg {
+    margin: 10px;
+}
+
+.discount {
+    font-weight: bolder;
+    font-size: 20rem;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    clip-path: polygon(14% 0, 86% 0, 86% 87%, 28% 67%);
 }
 
 .sr-only {
