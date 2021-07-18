@@ -95,13 +95,33 @@ main .support h3 {
     margin-bottom: 20px;
 }
 
-main .support form input, textarea {
+main .support form input,
+textarea {
     resize: none;
     width: 400px;
     margin-bottom: 10px;
     display: block;
 }
 
+/* Footer */
 footer {
     height: 50px;
+}
+
+/* Float Button */
+#floatButton {
+    font-size: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--red);
+    clip-path: circle();
+    box-shadow: 4px 2px 4px black;
+    cursor: pointer;
+    z-index: 9999;
 }
