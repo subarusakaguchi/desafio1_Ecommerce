@@ -160,6 +160,10 @@ main .cta #timerContainer .counter {
 }
 
 @media only screen and (max-width: 767px) {
+    /* Benefits */
+    main .benefits .benefitsContents .benefitsContent {
+        width: 300rem;
+    }
 
     /* Products */
     main .products #sales {
