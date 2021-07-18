@@ -17,11 +17,11 @@
 </head>
 
 <body>
-    <div id="floatButton">
+    <a href="#top" id="floatButton">
         ^
-    </div>
+    </a>
 
-    <main>
+    <main id="top">
         <section class="main container bg">
             <!-- Main -->
             <div>
@@ -48,17 +48,20 @@
                         Quer receber as nossas promoções?<br>Então cadastre o seu email!
                     </h2>
                     <p>
-                        Corra que o tempo está cabando!
+                        Corre que o tempo está cabando!
                     </p>
                 </div>
-                <div id="counter">
-                    Countdown
+                <div id="timerContainer">
+                    <div class="counter" id="counterD">20d</div>
+                    <div class="counter" id="counterH">12h</div>
+                    <div class="counter" id="counterM">34m</div>
+                    <div class="counter" id="counterS">20s</div>
                 </div>
                 <div id="cta">
                     <form action="">
                         <input type="email" name="email" id="email" placeholder="Seu melhor email">
                         <br>
-                        <button>QUERO ECONOMIZAR!</button>
+                        <button id="ctaBtn" onclick="register()">QUERO ECONOMIZAR!</button>
                     </form>
                 </div>
             </div>
@@ -72,17 +75,15 @@
                     Benefícios
                 </h2>
                 <p>
-                    Saldão não é só no nome!
+                    <strong>Saldão</strong> não é só no nome!
                 </p>
                 <div class="benefitsContents">
                     <div class="benefitsContent">
                         <h3>
-                            SEJA O PRIMEIRO!
+                            SEJA O PRIMEIRO A CHEGAR!
                         </h3>
                         <p>
-                            Cadastre o seu email e seja o primeiro a receber não só as notícias, mas como também as
-                            melhores
-                            promoções!
+                            Cadastre o seu email e seja o primeiro a receber todas as notícias e as melhores promoções da maior Black Friday de Livros do Brasil!
                         </p>
                     </div>
                     <div class="benefitsContent">

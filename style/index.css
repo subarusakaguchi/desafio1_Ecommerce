@@ -26,16 +26,20 @@ main .main strong {
 main .cta {
     background-color: var(--orange);
     height: 400px;
-    padding: 100px 0;
+    padding: 220px 0;
 }
 
 main .cta .ctaText h2 {
     color: var(--red);
 }
 
+main .cta .ctaText p {
+    margin-bottom: 20px;
+}
+
 main .cta #cta form input {
     width: 300rem;
-    margin-bottom: 20rem;
+    margin: 20rem 0;
 }
 
 /* Benefits */
@@ -124,4 +128,20 @@ footer {
     box-shadow: 4px 2px 4px black;
     cursor: pointer;
     z-index: 9999;
+}
+
+#floatButton:hover {
+    color: var(--orange);
+}
+
+/* Countdown */
+main .cta #timerContainer .counter {
+    font-size: clamp(20px, 4vw, 40rem);
+    display: inline;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    background-color: var(--white);
+    color: var(--red);
+    font-weight: bolder;
 }
