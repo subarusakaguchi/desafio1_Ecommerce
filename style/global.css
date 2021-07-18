@@ -1,0 +1,61 @@
+* {
+    /* Reset Global */
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    --black: #070707;
+    --white: #F5F5F5;
+    --red: #E42024;
+    --orange: #F3A712;
+    --gray: #748386;
+    --mainFont: 'Open Sans', sans-serif;
+    --secondaryFont: 'Poppins', sans-serif;
+
+    /* Ajuste para poder usar px = rem em escala 1:1 */
+    font-size: 6.25%;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: var(--secondaryFont);
+    font-size: clamp(14px, 16rem, 2vw);
+}
+
+h1, h2, h3 {
+    font-family: var(--mainFont);
+}
+
+h1 {
+    font-size: clamp(40px, 7vw, 60rem);
+}
+
+h2 {
+    font-size: clamp(30px, 5vw, 42rem);
+}
+
+h3 {
+    font-size: clamp(20px, 3vw, 36rem);
+}
+
+p {
+    font-family: var(--secondaryFont);
+    font-size: clamp(14px, 5vw, 20rem);
+}
+
+.sr-only {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-width: 0;
+}
