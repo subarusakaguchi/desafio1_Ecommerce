@@ -32,6 +32,7 @@ function createRecord(email) {
     this.email = email
 }
 
+//Função para limpar os emails caso necessário
 function clear() {
     localStorage.clear()
     counter = 0
@@ -53,12 +54,12 @@ var countDown = setInterval(function () {
     let counterH = document.getElementById('counterH')
     let counterM = document.getElementById('counterM')
     let counterS = document.getElementById('counterS')
-    
+
     counterD.innerText = days + 'd'
     counterH.innerText = hours + 'h'
     counterM.innerText = minutes + 'm'
     counterS.innerText = seconds + 's'
-    
+
 
     if (timeLeft <= 0) {
         clearInterval(countDown)
